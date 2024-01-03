@@ -10,6 +10,9 @@ function updateTimer() {
     document.querySelector(".h").textContent = '00';
     document.querySelector(".m").textContent = '00';
     document.querySelector(".s").textContent = '00';
+    document.querySelector("p").style.display = "block";
+
+    
   } else {
     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
     const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -39,4 +42,8 @@ document.getElementById('reset').addEventListener('click', function () {
   document.querySelector(".h").textContent = '00';
   document.querySelector(".m").textContent = '00';
   document.querySelector(".s").textContent = '00';
+
+  document.querySelector("p").style.display = "none";
 });
+
+

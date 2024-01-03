@@ -44,6 +44,12 @@ body{
   font-weight: bold;
 }
 
+p{
+  color: white;
+  font-size: 30px;
+  display: none;
+}
+
 #date{
   width: 1440px;
   height: 400px;
