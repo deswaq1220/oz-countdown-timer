@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="countdown-timer.css" />
+    <link rel="icon" href="./images/oz_icon.png" />
+
+    <title>오즈코딩스쿨 | 카운트다운 타이머</title>
+    <style>
+      .footer {
+        font-size: 12px;
+        text-align: center;
+        color: white;
+        position: absolute;
+        bottom: 10px;
+      }
+      .footer a {
+        color: hsl(282, 100%, 37%);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">COUNT DOWN</div>
+      <div id="date">
+        <div id="day">
+          <span class="d">0</span>
+          <span>DAY</span>
+        </div>
+        <div id="hours">
+          <span class="h">0</span>
+          <span>HOURS</span>
+        </div>
+        <div id="minutes">
+          <span class="m">0</span>
+          <span>MINUTES</span>
+        </div>
+        <div id="seconds">
+          <span class="s">0</span>
+          <span>SECONDS</span>
+        </div>
+      </div>
+      <div class="time">
+        <input type="datetime-local" id="user-input" />
+      </div>
+
+      <div class="btnWrap">
+        <button id="start">시작</button>
+        <button id="stop">정지</button>
+        <button id="reset">재설정</button>
+      </div>
+
+      <div class="footer">
+        © 2023. <a href="https://ozcodingschool.com/" target="_blank">ozcodingschool</a>. All rights
+        reserved. Developed by <a href="#">[변경원]</a>.
+      </div>
+    </div>
+
+    <script src="countdown-timer.js"></script>
+  </body>
+</html>

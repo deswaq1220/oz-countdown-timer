@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Francois+One&family=Luckiest+Guy&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Nanum+Gothic&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Playfair+Display:wght@400;500;600;700;800;900&family=Rubik+Bubbles&display=swap');
+@font-face {
+  font-family: 'LOTTERIACHAB';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+body{
+  width: 100%;
+  background-color: rgb(26, 26, 26);
+  font-family: 'GmarketSansMedium';
+}
+
+.container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 100px;
+  color: white;
+  font-family: 'LOTTERIACHAB';
+  font-weight: bold;
+}
+
+#date{
+  width: 1440px;
+  height: 400px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'LOTTERIACHAB';
+}
+
+#day,#hours,#minutes,#seconds{
+  width: 330px;
+  height: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
+#day{
+  /* background: rgba( 255, 255, 255, 0.15 ); */
+box-shadow: 0 8px 32px 0 #694aff33;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#694aff ;
+}
+#hours{
+  box-shadow: 0 8px 32px 0 #ff80ee33;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#ff80ee ;
+}
+#minutes{
+  box-shadow: 0 8px 32px 0 #ff550033;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#ff5500 ;
+}
+#seconds{
+  box-shadow: 0 8px 32px 0 #06df7233;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#06df72 ;
+}
+
+.d,.h,.m,.s{
+  font-size: 10rem;
+}
+
+span{
+  font-size: 16px;
+}
+
+.btnWrap{
+  margin-top: 6px;
+  
+}
+
+
+#start,#stop,#reset{
+  width: 100px;
+  height: 50px;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+  font-family: 'GmarketSansMedium';
+}
+
+#start{
+  box-shadow: 0 8px 32px 0 #694aff33;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#694aff ;
+}
+
+#stop{
+  box-shadow: 0 8px 32px 0 #ff80ee33;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color:#ff80ee ;
+}
+
+#reset{
+  box-shadow: 0 8px 32px 0 #06df7233;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color:#06df72 ;
+}
+
+#start:hover{
+  box-shadow: 0 8px 32px 0 #694aff33;
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background-color:#5e42e7 ;
+}
+
+#stop:hover{
+  box-shadow: 0 8px 32px 0 #ff80ee33;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color:#ea75db ;
+}
+
+
+#reset:hover{
+  box-shadow: 0 8px 32px 0 #06df7233;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color:#06c968 ;
+}
+
+
+#user-input{
+  padding: 6px;
+  margin-bottom: 5px;
+  box-shadow: 0 8px 32px 0 #ff550033;
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color:#ff5500 ;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
